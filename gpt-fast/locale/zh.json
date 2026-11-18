@@ -1,6 +1,6 @@
 {
   "meta": {
-    "title": "MyCodex 服务档位",
+    "title": "GPT Fast",
     "description": "把模型 id 映射成上游模型加 OpenAI service tier，让 priority（Fast）和 ultrafast 直接出现在模型列表里，不需要改代理。",
     "detail": "docs/DETAIL.md"
   }

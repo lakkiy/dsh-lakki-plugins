@@ -2,8 +2,8 @@
 # settings page can offer `gpt-6.2-sol-fast` / `gpt-6.2-sol-ultrafast`.
 # Add matching model rows to the llm-pi-ai provider in the profile patch.
 - insert:
-    - id: mycodex-service-tier
-      name: '@local/mycodex-service-tier'
+    - id: gpt-fast
+      name: '@local/gpt-fast'
       config:
         # Set hostnames in your local profile; empty means no rewriting.
         hosts: []

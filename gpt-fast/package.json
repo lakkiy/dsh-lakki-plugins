@@ -1,9 +1,9 @@
 {
-  "name": "@local/mycodex-service-tier",
+  "name": "@local/gpt-fast",
   "version": "1.0.0",
   "private": true,
   "type": "module",
-  "description": "Bind an OpenAI service tier (priority/ultrafast) to a model id for the MyCodex proxy.",
+  "description": "Bind an OpenAI service tier (priority/ultrafast) to a model id for a Responses API proxy.",
   "keywords": ["dsh", "dsh-bundle", "llm", "service-tier"],
   "exports": {
     ".": "./index.js",
@@ -18,7 +18,7 @@
     "icon.svg"
   ],
   "dsh": {
-    "id": "mycodex-service-tier",
+    "id": "gpt-fast",
     "bundle": {
       "patch": "./cordis.patch.yml"
     }

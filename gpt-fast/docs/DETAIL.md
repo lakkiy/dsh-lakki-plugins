@@ -1,7 +1,7 @@
-# MyCodex service tiers
+# GPT Fast
 
 DeepSeek Harness's pi-ai adapter never sends `service_tier`, so the tier cannot
-be chosen from the Models page. The supported proxy (MyCodex) also rejects
+be chosen from the Models page. A Responses API proxy may also reject
 model ids it does not know. This plugin closes both gaps at the request
 boundary: it keeps the model id the client asks for, rewrites it to the real
 upstream id, and adds `service_tier` before the body leaves the process.
@@ -21,8 +21,8 @@ process and removed when the plugin unloads.
 ## Configuration
 
 ```yaml
-- id: mycodex-service-tier
-  name: '@local/mycodex-service-tier'
+- id: gpt-fast
+  name: '@local/gpt-fast'
   config:
     hosts: [proxy.example.com]
     models:

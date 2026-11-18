@@ -2,7 +2,7 @@
  * Bind an OpenAI `service_tier` to a model id for a Responses-API proxy.
  *
  * DSH's pi-ai adapter never sends `service_tier`, so a tier cannot be selected
- * from the Models settings page. The supported upstream (MyCodex) only accepts
+ * from the Models settings page. An upstream proxy may only accept
  * model ids it knows, so a client-visible id such as `gpt-6.2-sol-fast` has to
  * be rewritten to `gpt-6.2-sol` and annotated with `service_tier: priority`
  * before the request leaves the process.
@@ -12,11 +12,11 @@
  * `/responses` body, and replaces the model id plus adds the tier. Everything
  * else — headers, streaming, cancellation — is passed through untouched.
  *
- * @module @local/mycodex-service-tier
+ * @module @local/gpt-fast
  */
 
 /** Slot holding the shared patch so repeated activations never double-wrap fetch. */
-const PATCH_KEY = Symbol.for('dsh.mycodex-service-tier.patch')
+const PATCH_KEY = Symbol.for('dsh.gpt-fast.patch')
 
 /** @typedef {{ model: string, serviceTier: string }} TierMapping */
 
@@ -163,7 +163,7 @@ export function apply(ctx, config) {
   ctx.effect(() => {
     const handle = install(state)
     return () => handle.release()
-  }, 'mycodex-service-tier.fetch')
+  }, 'gpt-fast.fetch')
 }
 
-export const name = 'mycodex-service-tier'
+export const name = 'gpt-fast'
