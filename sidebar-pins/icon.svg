@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" width="64" height="64" role="img" aria-label="Sidebar pins">
+  <rect x="2" y="2" width="60" height="60" rx="16" fill="#4d6bfe"/>
+  <g transform="translate(16 14) scale(2)">
+    <path d="M9.97 1.706 13.155 3.936 10.902 8.123 11.516 11.605 10.719 12.743 2.528 7.007 3.324 5.869 6.806 5.255 9.97 1.706Z" fill="#ffffff"/>
+    <path d="M6.053 9.475a.7.7 0 0 1 1.138.797l-3.205 4.199-.774-.542 2.841-4.454Z" fill="#ffffff"/>
+  </g>
+</svg>

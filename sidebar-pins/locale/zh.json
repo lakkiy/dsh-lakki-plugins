@@ -1,0 +1,7 @@
+{
+  "meta": {
+    "title": "侧栏置顶",
+    "description": "把工作区置顶到侧栏最前，并把选定的会话汇总到所有工作区之上的全局置顶区。",
+    "detail": "docs/DETAIL.md"
+  }
+}

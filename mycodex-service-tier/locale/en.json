@@ -1,0 +1,7 @@
+{
+  "meta": {
+    "title": "MyCodex service tiers",
+    "description": "Map a model id to an upstream model plus an OpenAI service tier, so priority (Fast) and ultrafast answers can be selected from the Models list without changing the proxy.",
+    "detail": "docs/DETAIL.md"
+  }
+}

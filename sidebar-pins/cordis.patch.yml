@@ -1,0 +1,5 @@
+# @local/sidebar-pins bundle patch: one Host row whose only job is to let the
+# Client registry serve ./client.js. The feature itself is browser-only.
+- insert:
+    - id: sidebar-pins
+      name: '@local/sidebar-pins'

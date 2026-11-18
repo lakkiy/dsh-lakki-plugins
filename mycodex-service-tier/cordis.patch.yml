@@ -1,0 +1,19 @@
+# Applies a service tier to a model id at the fetch boundary, so the Models
+# settings page can offer `gpt-6.2-sol-fast` / `gpt-6.2-sol-ultrafast`.
+# Add matching model rows to the llm-pi-ai provider in the profile patch.
+- insert:
+    - id: mycodex-service-tier
+      name: '@local/mycodex-service-tier'
+      config:
+        # Set hostnames in your local profile; empty means no rewriting.
+        hosts: []
+        models:
+          gpt-6.2-sol-fast:
+            model: gpt-6.2-sol
+            serviceTier: priority
+          gpt-6.2-sol-ultrafast:
+            model: gpt-6.2-sol
+            serviceTier: ultrafast
+          gpt-6.2-astra-fast:
+            model: gpt-6.2-astra
+            serviceTier: priority

@@ -1,0 +1,26 @@
+{
+  "name": "@local/mycodex-service-tier",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "description": "Bind an OpenAI service tier (priority/ultrafast) to a model id for the MyCodex proxy.",
+  "keywords": ["dsh", "dsh-bundle", "llm", "service-tier"],
+  "exports": {
+    ".": "./index.js",
+    "./locale/*.json": "./locale/*.json",
+    "./icon": "./icon.svg"
+  },
+  "files": [
+    "index.js",
+    "cordis.patch.yml",
+    "locale/*.json",
+    "docs",
+    "icon.svg"
+  ],
+  "dsh": {
+    "id": "mycodex-service-tier",
+    "bundle": {
+      "patch": "./cordis.patch.yml"
+    }
+  }
+}

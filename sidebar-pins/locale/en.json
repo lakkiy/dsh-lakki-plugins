@@ -1,0 +1,7 @@
+{
+  "meta": {
+    "title": "Sidebar pins",
+    "description": "Pin workspaces to the front of the sidebar and keep chosen sessions in one global pinned section above every workspace.",
+    "detail": "docs/DETAIL.md"
+  }
+}
